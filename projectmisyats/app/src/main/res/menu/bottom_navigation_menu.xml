@@ -3,13 +3,10 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_home"
-        android:title="Home" />
-    <item
-        android:id="@+id/nav_incomplete"
-        android:icon="@drawable/ic_incomplete"
-        android:title="Incomplete" />
+        android:title="Текущие задачи" />
+
     <item
         android:id="@+id/nav_completed"
         android:icon="@drawable/ic_completed"
-        android:title="Completed" />
+        android:title="Выполненные" />
 </menu>

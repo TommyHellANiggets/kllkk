@@ -11,7 +11,6 @@ import java.util.List;
 
 @Dao
 public interface TaskDao {
-
     @Insert
     void insert(Task task);
 

@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class HomeFragment extends Fragment {
+
     private TaskViewModel taskViewModel;
     private TaskAdapter adapter;
 
@@ -32,7 +33,7 @@ public class HomeFragment extends Fragment {
         recyclerView.setAdapter(adapter);
 
         taskViewModel = new ViewModelProvider(this).get(TaskViewModel.class);
-        taskViewModel.getAllTasks().observe(getViewLifecycleOwner(), new Observer<List<Task>>() {
+        taskViewModel.getIncompleteTasks().observe(getViewLifecycleOwner(), new Observer<List<Task>>() {
             @Override
             public void onChanged(List<Task> tasks) {
                 adapter.submitList(tasks);
