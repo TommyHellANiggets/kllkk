@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_incomplete"
+        android:icon="@drawable/ic_incomplete_tasks"
+        android:title="Incomplete Tasks" />
+    <item
+        android:id="@+id/nav_completed"
+        android:icon="@drawable/ic_completed_tasks"
+        android:title="Completed Tasks" />
+    <item
+        android:id="@+id/delete_all_tasks"
+        android:title="Delete All Tasks"
+        android:icon="@android:drawable/ic_menu_delete" />
+</menu>
